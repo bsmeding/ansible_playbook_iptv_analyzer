@@ -1,0 +1,14 @@
+---
+- name: Install IPTV analyzer on localhost
+  hosts: localhost
+  gather_facts: no
+  vars:
+    - show_debug: false
+  tasks:
+    - name: Run role to install database 
+      include_role:
+        name: iptv_analyzer
+      vars:
+        iptv_analyzer_install_database: true
+        
+
