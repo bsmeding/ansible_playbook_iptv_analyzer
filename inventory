@@ -1,0 +1,5 @@
+[databaseserver]
+localhost
+
+[collector]
+localhost

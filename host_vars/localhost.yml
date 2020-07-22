@@ -1,0 +1,6 @@
+---
+ansible_connection: local
+ansible_python_interpreter: "/usr/bin/python3.7"
+
+
+iptv_analyzer_database_root_password: root123
