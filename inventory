@@ -1,5 +1,5 @@
 [databaseserver]
 localhost
 
-[collector]
+[collectors]
 localhost

@@ -12,7 +12,13 @@
         iptv_analyzer_install_database: true
         iptv_analyzer_database_install_frontend: true
         iptv_analyzer_install_collector: false
-        
+
+- name: Install IPTV analyzer on localhost
+  hosts: collectors
+  gather_facts: true
+  vars:
+    - show_debug: false
+  tasks:        
     - name: Run role to install collector
       include_role:
         name: iptv_analyzer
