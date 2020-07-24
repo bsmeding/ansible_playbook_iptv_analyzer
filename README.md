@@ -15,3 +15,7 @@ cd ansible_playbook_iptv_analyzer
 Logout and login again to get ansible in path
 * ansible-galaxy install bsmeding.iptv_analyzer
 * ansible-playbook install_iptv_analyzer_localhost.yml -i ./inventory --ask-become-pass
+
+
+# Update iptv_analyzer:
+ansible-galaxy install bsmeding.iptv_analyzer --force
