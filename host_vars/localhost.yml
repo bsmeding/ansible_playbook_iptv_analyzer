@@ -4,3 +4,4 @@ ansible_python_interpreter: "/usr/bin/python3.7"
 
 
 iptv_analyzer_database_root_password: root123
+iptv_analyzer_collector_interface: 'ens33'

@@ -4,14 +4,14 @@
   gather_facts: true
   vars:
     - show_debug: false
-    - iptv_analyzer_database_force_init_script: true
+    - iptv_analyzer_install_collector_force_reinstall: true
   tasks:
     - name: Run role to install database 
       include_role:
         name: bsmeding.iptv_analyzer
       vars:
         iptv_analyzer_install_database: true
-        iptv_analyzer_database_install_frontend: true
+        iptv_analyzer_database_install_frontend: false
         iptv_analyzer_install_collector: false
 
 - name: Install IPTV analyzer on localhost
@@ -19,7 +19,6 @@
   gather_facts: true
   vars:
     - show_debug: false
-    - iptv_analyzer_install_collector_force_reinstall: true
   tasks:        
     - name: Run role to install collector
       include_role:

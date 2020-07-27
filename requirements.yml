@@ -1,0 +1,2 @@
+# Install iptv_analyzer from Ansible Galaxy
+- src: bsmeding.iptv_analyzer
