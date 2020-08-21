@@ -3,6 +3,7 @@ Playbook to install the role iptv_analyzer on localhost
 
 
 # Prerequestics
+* sudo apt update && sudo apt upgrade
 * sudo apt install git python3-pip
 * pip3 install ansible
 
